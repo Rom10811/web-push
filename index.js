@@ -52,7 +52,10 @@ app.post('/saveSubscriber', (req, res) => {
   if(data){
     let result = JSON.parse(data);
     for(let i=0; i < result.length; i++){
-      arrayOfValues.push(result[i]);
+      if(result[i].endpoint != subscription.endpoint)
+      {
+        arrayOfValues.push(result[i]);
+      }
     }
   }
   arrayOfValues.push(subscription);

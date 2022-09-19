@@ -6,8 +6,6 @@ const messageVal = document.querySelector('.input-message');
 
 
 async function triggerSendNotification(message, titre) {
-  console.log(typeof message);
-  console.log(typeof titre);
   let formData = {
     "titre": titre,
     "message": message

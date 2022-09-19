@@ -31,7 +31,6 @@ async function triggerPushNotification() {
 
     // fs.writeFile('client/data.json', JSON.stringify(subscription));
 
-    console.log(subscription);
     console.log('acceptance complete');
     await fetch('/saveSubscriber', {
       method: 'POST',
