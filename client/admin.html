@@ -9,13 +9,23 @@
   <title>Push Notifications using Node.js and Web Push</title>
 </head>
 <body>
-<div class="row mt-5 d-flex">
-  <div class="buttons d-flex justify-content-center">
-    <button class="trigger-push btn btn-primary">Activer les Notifications</button>
-  </div>
-</div>
+  <div class="form mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-2">
+        <div class="form-group"><input type="text" class="form-control input-titre" placeholder="Titre"></div>
+      </div>
 
-  <script src="main.js"></script>
+      <div class="col-sm-2">
+        <div class="form-group"><input type="text" class="form-control input-message" placeholder="Texte"></div>
+      </div>
+
+      <div class="col-sm-2">
+        <button class="btn btn-success trigger-send w-100">Envoyer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
 </body>
 </html>
 
